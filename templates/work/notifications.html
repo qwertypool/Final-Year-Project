@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% block homeactive %}active {% endblock homeactive %}
+{% block title %}
+Notifications
+{% endblock title %}
+
+
+{% block style %}
+<style>
+
+</style>
+{% endblock style %}
+
+
+{% block content %}
+<!-- <img src="https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    alt=""> -->
+<div class="container my-2">
+    <h1 align="center"><svg class="bi bi-bell-fill" width="0.9em" height="0.9em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path d="M8 16a2 2 0 002-2H6a2 2 0 002 2zm.995-14.901a1 1 0 10-1.99 0A5.002 5.002 0 003 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
+    </svg> NOTIFICATIONS</h1><hr><br><br>
+    <!-- <table border="2px">
+        <thead>
+            <th>UID</th>
+            <th>CARD</th>
+            <th>NAME</th>
+            <th>Contact Email</th>
+            <th>Founder Email</th>
+            <th>Action</th>
+        </thead>
+        {% for i in q3 %}
+        <tr>  
+            <td>{{i.uid}}</td>
+            <td>{{i.card}}</td>
+            <td>{{i.name}}</td>
+            <td>{{i.email}}</td>
+            <td>{{i.foundemail}}</td>
+            <td><a href="/work/recorddelete/{{i.uid}}">Delete</a></td>
+        </tr>
+        {%endfor%}
+    </table> -->
+    
+</div>
+<div class="container">
+<table class="table table-hover table-light" border="4px">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">UID</th>
+        <th scope="col">Card Type</th>
+        <th scope="col">Cardholder Name</th>
+        <th scope="col">Cardholder Email</th>
+        <th scope="col">CardFounder Email</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for i in q3 %}
+        <tr>  
+            <td>{{i.uid}}</td>
+            <td>{{i.card}}</td>
+            <td>{{i.name}}</td>
+            <td>{{i.email}}</td>
+            <td>{{i.foundemail}}</td>
+            <td><a href="/work/recorddelete/{{i.uid}}">Delete</a></td>
+        </tr>
+        {%endfor%}
+      <!-- <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="2">Larry the Bird</td>
+        <td>@twitter</td>
+      </tr> -->
+    </tbody>
+  </table>
+</div>
+{% endblock content %}

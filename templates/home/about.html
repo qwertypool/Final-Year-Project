@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{%load static%}
+
+{% block aboutactive %}active {% endblock aboutactive %}
+{% block title %}
+    About
+{% endblock title %}
+    
+
+{% block style %}
+ <style>
+    /* .card-img-top {
+    width: 70%;
+    height: 40vw;
+    object-fit: cover;
+  
+} */
+.card-img-top {
+    width: 350px;
+    height: 21vw;
+    object-fit: cover;
+}
+</style>
+{% endblock style %} 
+    
+
+{% block content %}
+<div class="container my-2">
+
+
+<div class="jumbotron jumbotron-fluid" style="background-color: rgba(39, 184, 162,0.2);">
+    <div class="container">
+      <h1 class="display-4"><svg class="bi bi-code-slash" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M4.854 4.146a.5.5 0 010 .708L1.707 8l3.147 3.146a.5.5 0 01-.708.708l-3.5-3.5a.5.5 0 010-.708l3.5-3.5a.5.5 0 01.708 0zm6.292 0a.5.5 0 000 .708L14.293 8l-3.147 3.146a.5.5 0 00.708.708l3.5-3.5a.5.5 0 000-.708l-3.5-3.5a.5.5 0 00-.708 0zm-.999-3.124a.5.5 0 01.33.625l-4 13a.5.5 0 01-.955-.294l4-13a.5.5 0 01.625-.33z" clip-rule="evenodd"/>
+      </svg>About us</h1>
+      <p class="lead">Come to know about us and the services provided by us!Let's join and sign up for free to enable smooth solution to your problem.</p>
+    </div>
+  </div>
+</div>
+  <div class="container">
+  <h1><svg class="bi bi-people-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    
+    <path fill-rule="evenodd" d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 100-6 3 3 0 000 6zm-5.784 6A2.238 2.238 0 015 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 005 9c-4 0-5 3-5 4s1 1 1 1h4.216zM4.5 8a2.5 2.5 0 100-5 2.5 2.5 0 000 5z" clip-rule="evenodd"/>
+  </svg> Our services</h1>
+  
+ 
+
+
+
+
+<div class="card-columns pt-5">
+  <div class="card">
+    <img src="{% static "images/connect.jpg" %}" alt="My image" class="card-img-top" >
+    <div class="card-body">
+      <h5 class="card-title">Connecting people</h5>
+      <p class="card-text">We always tend to connect people across the arena to make sure that your problem doesn't persists long and to find them asap from our side!</p>
+    </div>
+  </div>
+  <div class="card p-3">
+    <blockquote class="blockquote mb-0 card-body">
+      <p>We make sure about the awareness of your latest updates through mails! We would inform you as soon as there's an update</p>
+      <!-- <footer class="blockquote-footer">
+        <small class="text-muted">
+         
+        </small>
+      </footer> -->
+    </blockquote>
+  </div>
+  <div class="card">
+    <img src="{% static "images/passport.jpg" %}" alt="My image" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title">Card types</h5>
+      <p class="card-text">We support cards of types - Adhar Card, Voter ID Card , Passport , ATM card and take full responsiblity of it's security</p>
+      <p class="card-text"><small class="text-muted">You can go through FAQ section</small></p>
+    </div>
+  </div>
+  <div class="card bg-primary text-white text-center p-3">
+    <blockquote class="blockquote mb-0">
+      <p>“In this world, there was nothing scarier than trusting someone. But there was also nothing more rewarding.”</p>
+      <footer class="blockquote-footer text-white">
+        <small>
+          Brad Meltzer <cite title="Source Title">..keepinspiring</cite>
+        </small>
+      </footer>
+    </blockquote>
+  </div>
+
+  <div class="card">
+    <img src="{% static "images/abt2.jpg" %}" alt="My image"class="card-img-top">
+  </div>
+  <div class="card p-3 text-right">
+    <blockquote class="blockquote mb-0">
+      <p>“Help you solve your problems with a click of button!“Problems are not stop signs, they are guidelines.” </p>
+      <footer class="blockquote-footer">
+        <small class="text-muted">
+          Robert H. Shuller<cite title="Source Title"></cite>
+        </small>
+      </footer>
+    </blockquote>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Contribute Us</h5>
+      <p class="card-text">Contribute us by registering any valid card you found in your area by registering it's details in the found card!  </p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+</div>
+  <div class="card text-center">
+    <div class="card-body">
+      <h5 class="card-title">Reach us</h5>
+      <p class="card-text">In case of any uncertainity or a problem that persists long, you can reach us by contacting through the contact from!</p>
+      <p class="card-text"><small class="text-muted">Contact our team</small></p>
+    </div>
+  </div>
+ 
+</div>
+{% endblock content %}
+    
