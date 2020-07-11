@@ -94,11 +94,9 @@ def found_view(request):
                     founddel=Found.objects.get(uid__exact=temp)
                     messagelost='{} Found your card. Please contact them at "{}".'.format(found_user_name,found_user_email)
                     messagefound='{} - The owner of the {} with unique id {} has registered for the card. Please contact them at "{}".'.format(lost_user_name,lost_user_card,lost_user_uid,lost_user_email)
-                    print(messagelost)
-                    print(messagefound)
+       
 
-
-                    # uncomment to enable sending mail facility
+                    
                     send_mail('LOFO mail',messagelost,'deepapandey364@gmail.com',[lost_user_email], fail_silently=False,)
                     send_mail('LOFO mail',messagefound,'deepapandey364@gmail.com',[found_user_email], fail_silently=False,)
 
