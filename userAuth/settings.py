@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'home',
-    'work',
+    'work', #for lost and found section
 ]
 
 MIDDLEWARE = [
@@ -54,7 +54,6 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'userAuth.urls'
-
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
